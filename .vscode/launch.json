@@ -20,16 +20,10 @@
       "environment": [],
       "externalConsole": true,
       "osx": {
-        "MIMode": "lldb"
+        "MIMode": "lldb",
       }
-    },
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
-      "request": "launch",
-      "args": [],
-      "cwd": "/Users/juliarussell/Desktop/42/git-ft_printf",
-      "program": "/Users/juliarussell/Desktop/42/git-ft_printf/build/Debug/outDebug"
-    }
-  ]
+	}
+]
 }
+
+
