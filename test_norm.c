@@ -6,21 +6,21 @@
 /*   By: julrusse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 12:49:38 by julrusse          #+#    #+#             */
-/*   Updated: 2024/10/19 13:07:29 by julrusse         ###   ########.fr       */
+/*   Updated: 2024/10/19 13:29:54 by julrusse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    ft_test(char c)
+char	ft_test(char c)
 {
-    if (c >= 'a' && c <= 'z')
-        return (c - ('a' - 'A'));
+	if (c >= 'a' && c <= 'z')
+		return (c - ('a' - 'A'));
 }
 
 int main(void)
 {
-    char    c;
+	char	c;
 
-    c = 'a';
-    printf("%s, ft_test(c)");
-    return (0);
+	c = 'a';
+	printf("%s, ft_test(c)");
+	return (0);
 }
