@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   csp_functions.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julrusse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/19 15:12:39 by julrusse          #+#    #+#             */
-/*   Updated: 2024/10/19 16:17:22 by julrusse         ###   ########.fr       */
+/*   Created: 2024/10/20 20:07:48 by julrusse          #+#    #+#             */
+/*   Updated: 2024/10/20 20:11:24 by julrusse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libftprintf.h"
 
-# include "libft.h"
-# include <unistd.h>
-# include <stdarg.h>
+int	ft_c(char c)
+{
+	ft_putchar_fd(c, 1);
+	return (1);
+}
 
-int	ft_printf(const char *format, ...);
-
-#endif
+int	ft_s(char *s)
+{
+	ft_putstr_fd(s, 1);
+	return (1);
+}
