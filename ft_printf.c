@@ -6,7 +6,7 @@
 /*   By: julrusse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 14:57:30 by julrusse          #+#    #+#             */
-/*   Updated: 2024/10/21 15:32:54 by julrusse         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:35:20 by julrusse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@ static int	ft_select_arg(char c, va_list *args)
 		count = ft_putchar_count((char)va_arg(*args, int));
 	else if (c == 's')
 		count = ft_putstr_count(va_arg(*args, char *));
+	else if (c == 'd' || c == 'i')
+		count = ft_putnbr_count(va_arg(*args, int));
+	else if (c == 'u')
+		count = ft_unsignedint_count(va_arg(*args, unsigned int));
 	return (count);
 }
 
@@ -43,7 +47,7 @@ int	ft_printf(const char *format, ...)
 			count += result;
 		}
 		else
-			count += ft_putstr_count(format, &count);
+			count += ft_putchar_count(format[i]);
 		i++;
 	}
 	va_end(args);

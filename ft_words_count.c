@@ -6,7 +6,7 @@
 /*   By: julrusse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 20:07:48 by julrusse          #+#    #+#             */
-/*   Updated: 2024/10/21 15:29:01 by julrusse         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:27:07 by julrusse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int	ft_putchar_count(char c)
 int	ft_putstr_count(char *s)
 {
 	size_t	count;
+
 	if (!s)
 	{
 		write(1, "(null)", 6);
@@ -28,9 +29,8 @@ int	ft_putstr_count(char *s)
 	count = 0;
 	while (s[count])
 	{
-		ft_putchar_fd(s, 1);
+		ft_putchar_fd(s[count], 1);
 		count++;
 	}
-
 	return (count);
 }
