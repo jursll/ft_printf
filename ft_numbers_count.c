@@ -6,7 +6,7 @@
 /*   By: julrusse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 17:19:10 by julrusse          #+#    #+#             */
-/*   Updated: 2024/10/24 11:20:21 by julrusse         ###   ########.fr       */
+/*   Updated: 2024/10/24 16:27:08 by julrusse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,11 +74,9 @@ int	ft_ptr_count(void *ptr)
 	address = (unsigned long)ptr;
 	count += ft_putchar_count('0');
 	count += ft_putchar_count('x');
-	if (!ptr)
-	{
+	if (!address)
 		count += ft_putchar_count('0');
-		return (count);
-	}
-	count += ft_hex_count(address, 0);
+	else
+		count += ft_hex_count(address, 0);
 	return (count);
 }
