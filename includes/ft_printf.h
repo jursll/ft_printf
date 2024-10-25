@@ -6,7 +6,7 @@
 /*   By: julrusse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:12:39 by julrusse          #+#    #+#             */
-/*   Updated: 2024/10/24 10:51:00 by julrusse         ###   ########.fr       */
+/*   Updated: 2024/10/25 12:06:31 by julrusse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdarg.h>
+# include <string.h>
 # include "libft.h"
 
 int	ft_printf(const char *format, ...);
